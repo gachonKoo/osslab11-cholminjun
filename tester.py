@@ -13,7 +13,7 @@ all_passed = True
 for p1, p2, expected in test_data:
     try:
         # Call the calculate_distance function from geo.utils
-        actual = geo.utils.calculate_distance(p1, p2)
+        actual = geo.utils.distance(p1, p2)
         
         # 부동 소수점 비교는 math.isclose를 사용하거나 오차 범위를 사용해야 하지만, 
         # 여기서는 간단하게 근접값으로 비교합니다.

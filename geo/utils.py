@@ -1,7 +1,7 @@
 import math
 
 
-def calculate_distance(p1, p2):
+def distance(p1, p2):
     """
     두 점 (p1, p2) 사이의 유클리드 거리를 계산합니다.
     """
