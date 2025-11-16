@@ -10,9 +10,9 @@ def calculate_distance(p1, p2):
     if len(p1) != len(p2):
         raise ValueError("Points must have the same number of dimensions.")
 
-    sum_sq = 0.0
+    s = 0.0
     for a, b in zip(p1, p2):
         diff = a - b
-        sum_sq += diff * diff
+        s += diff * diff
 
-    return math.sqrt(sum_sq)
+    return math.sqrt(s)
