@@ -1,5 +1,5 @@
 import math
-import numpy as np # <-- numpy 임포트 추가
+
 
 def calculate_distance(p1, p2):
     """
