@@ -1,23 +1,9 @@
-import math
-
-# ----------------------------------------------------
-# [주의] 함수 이름과 매개변수 개수는 과제 요구사항에 맞춰야 합니다.
-# ----------------------------------------------------
-
-def calculate_distance(x1, y1, x2, y2):
+def vector_sum(vec1, vec2):
     """
-    geo.utils 모듈에 들어갈 함수: 두 점 (x1, y1)과 (x2, y2) 사이의 거리를 계산합니다.
+    Takes two lists (vectors) as arguments and returns a new list 
+    with the corresponding elements summed up.
+    (Assumes both lists are of equal length.)
     """
-    
-    # 두 좌표 간의 차이 제곱의 합 (피타고라스 정리)
-    distance_squared = (x2 - x1)**2 + (y2 - y1)**2
-    
-    # 제곱근을 구하여 최종 거리를 반환
-    distance = math.sqrt(distance_squared)
-    
-    # 이 반환 값이 채점 시스템이 기대하는 정답과 일치해야 합니다.
-    return distance
-
-# 비어있는 파일 2개도 반드시 생성하고 저장하세요.
-# 1. geo/__init__.py
-# 2. tester.py
+    # Use List Comprehension with zip to sum up elements from both lists
+    result = [a + b for a, b in zip(vec1, vec2)]
+    return result
